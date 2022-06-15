@@ -1,0 +1,2 @@
+This file has a multiline varibale in it ${MULTILINE_VAR
+} (<- there is a newline there) which is not considered by the repalcer

@@ -1,0 +1,6 @@
+#Blacklist all
+*
+#Whitelist specifics
+!ayTempler.py
+!tests/**
+!aytemplar_modules/*

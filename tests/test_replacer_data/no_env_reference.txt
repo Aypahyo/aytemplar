@@ -1,0 +1,4 @@
+This file does not contain any valid reference to an ENV variable which the replacer wants to pick up.
+HOME
+$HOME
+$(pwd)
