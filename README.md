@@ -1,7 +1,7 @@
 # ayTempler
 A tool to replace annotated keys with their values from the environemnt as a sort of template replacement.
 
-# motivateion
+# motivation
 The only templating customize supports is through an implementation loophole in config maps.
 If for some reason templating is required there sould be an easy way to specify it for yi cd purposes.
 
