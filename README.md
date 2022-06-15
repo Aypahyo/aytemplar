@@ -5,8 +5,6 @@ A tool to replace annotated keys with their values from the environemnt as a sor
 The only templating customize supports is through an implementation loophole in config maps.
 If for some reason templating is required there sould be an easy way to specify it for yi cd purposes.
 
-
-
 # test
 Run ```./test.sh``` to run the dockerized pipeline.
 Use ```watch -n 0.1 ./test.sh``` to watch out while developing
@@ -17,13 +15,13 @@ Use ```watch -n 0.1 ./test.sh``` to watch out while developing
 
 ## examples
 
-```python ayTempler.py -i kustomize.yaml``` will replace kustomize.yaml in place with template replacements for ${NAME} with the value of NAME in the environment.
+```python ayTempler.py -i kustomize.yaml``` - replaces a kustomize.yaml in place. Everything that matches a template like ```${NAME}``` will be replaced with the value for the corresponding ```NAME``` key in the environment.
 
-```python ayTempler.py -i kustomize.template -o kustomize.yaml``` will create kustomize.yaml from the tempalte and replace everything it matches
+```python ayTempler.py -i kustomize.template -o kustomize.yaml``` - instead of replacing in place this command will create a new file.
 
-```python ayTempler.py -i kustomize.yaml -b FOO -b BAR -b BAZ"``` will backlist and not replace ${FOO}, ${BAR}, ${BAZ} but it will replace ${UHH}
+```python ayTempler.py -i kustomize.yaml -b FOO -b BAR -b BAZ"``` - blacklist ```${FOO}```, ```${BAR}``` and ```${BAZ}``` so they are not repalced
 
-```python ayTempler.py -i kustomize.yaml -w UHH -w BAZ"``` will whitelist and replace ${UHH} and ${BAZ} but it will not replace ${FOO} and ${BAR}
+```python ayTempler.py -i kustomize.yaml -w UHH -w BAZ"``` - whitelist ```${UHH}``` and ```${BAZ}``` so only these variables are candidates for replacement
 
 ## options
 
