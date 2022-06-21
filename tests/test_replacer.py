@@ -4,7 +4,7 @@ import unittest
 from unittest import mock
 from unittest.mock import MagicMock, Mock
 
-from aytemplar_modules.replacer import Replacer
+from aytemplar_core.replacer import Replacer
 
 class TestReplacer(unittest.TestCase):
     __uut : Replacer = None

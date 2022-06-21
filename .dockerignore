@@ -1,6 +1,7 @@
 #Blacklist all
 *
 #Whitelist specifics
-!ayTempler.py
+!setup.py
+!aytemplar.py
+!aytemplar_core/**
 !tests/**
-!aytemplar_modules/*
