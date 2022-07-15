@@ -2,7 +2,7 @@ from logging import Logger
 import os
 import unittest
 from unittest import mock
-from unittest.mock import MagicMock, Mock
+from unittest.mock import MagicMock
 
 from aytemplar_core.replacer import Replacer
 
